@@ -137,6 +137,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   };
 
+  const load5 = async () => {
+
+    const videoSet = await makeVideoPlane1('assets/videos/My Movie 7.mp4');
+    const anchor = mindarThree.addAnchor(5);
+    anchor.group.add(videoSet.plane);
+    anchor.onTargetFound = () => {
+      videoSet.video.play();
+    }
+    anchor.onTargetLost = () => {
+      videoSet.video.pause();
+    }
+    // const textMesh = makeTextMesh('Disney');
+    // anchor.group.add(textMesh);
+
+  };
+
 
   const Start = async () => {
 
@@ -172,4 +188,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   start3Button.addEventListener('click', load3);
   const start4Button = document.getElementById('start-4-button');
   start4Button.addEventListener('click', load4);
+  const start5Button = document.getElementById('start-5-button');
+  start5Button.addEventListener('click', load5);
 });
