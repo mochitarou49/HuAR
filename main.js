@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load0 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/seidoLR.mp4');
+    const videoSet = await makeVideoPlane1('assets/videos/bud.mp4');
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load1 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/fish.mp4');
+    const videoSet = await makeVideoPlane1('assets/videos/mat.mp4');
     const anchor = mindarThree.addAnchor(1);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load2 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/goulash.mp4');
+    const videoSet = await makeVideoPlane1('assets/videos/pin.mp4');
     const anchor = mindarThree.addAnchor(2);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -107,40 +107,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load3 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/pintyeri.mp4');
+    const videoSet = await makeVideoPlane1('assets/videos/art.mp4');
     const anchor = mindarThree.addAnchor(3);
-    anchor.group.add(videoSet.plane);
-    anchor.onTargetFound = () => {
-      videoSet.video.play();
-    }
-    anchor.onTargetLost = () => {
-      videoSet.video.pause();
-    }
-    // const textMesh = makeTextMesh('Disney');
-    // anchor.group.add(textMesh);
-
-  };
-
-  const load4 = async () => {
-
-    const videoSet = await makeVideoPlane1('assets/videos/marika2.mp4');
-    const anchor = mindarThree.addAnchor(4);
-    anchor.group.add(videoSet.plane);
-    anchor.onTargetFound = () => {
-      videoSet.video.play();
-    }
-    anchor.onTargetLost = () => {
-      videoSet.video.pause();
-    }
-    // const textMesh = makeTextMesh('Disney');
-    // anchor.group.add(textMesh);
-
-  };
-
-  const load5 = async () => {
-
-    const videoSet = await makeVideoPlane1('assets/videos/My Movie 7.mp4');
-    const anchor = mindarThree.addAnchor(5);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
       videoSet.video.play();
@@ -158,7 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: './assets/targets/targets.mind',
+      imageTargetSrc: './assets/targets/Hu.mind',
     });
     const { renderer, scene, camera } = mindarThree;
     await mindarThree.start();
@@ -187,8 +155,4 @@ document.addEventListener('DOMContentLoaded', async () => {
   start2Button.addEventListener('click', load2);
   const start3Button = document.getElementById('start-3-button');
   start3Button.addEventListener('click', load3);
-  const start4Button = document.getElementById('start-4-button');
-  start4Button.addEventListener('click', load4);
-  const start5Button = document.getElementById('start-5-button');
-  start5Button.addEventListener('click', load5);
 });
