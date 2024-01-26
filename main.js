@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load1 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/test.mov');
+    const videoSet = await makeVideoPlane1('assets/videos/mat.MP4');
     const anchor = mindarThree.addAnchor(1);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load3 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/test.mov');
+    const videoSet = await makeVideoPlane1('assets/videos/art.MP4');
     const anchor = mindarThree.addAnchor(3);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
