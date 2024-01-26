@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load2 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/test.mov');
+    const videoSet = await makeVideoPlane1('assets/videos/pin.MP4');
     const anchor = mindarThree.addAnchor(2);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
