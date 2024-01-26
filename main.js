@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load0 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/test.mov');
+    const videoSet = await makeVideoPlane1('assets/videos/bud.MP4');
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
