@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load0 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/bud.MP4');
+    const videoSet = await makeVideoPlane1('assets/videos/Budapest.MP4');
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load1 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/mat.MP4');
+    const videoSet = await makeVideoPlane1('assets/videos/Matthias church.MP4');
     const anchor = mindarThree.addAnchor(1);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load2 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/pin.MP4');
+    const videoSet = await makeVideoPlane1('assets/videos/Pincehely 2.MP4');
     const anchor = mindarThree.addAnchor(2);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const load3 = async () => {
 
-    const videoSet = await makeVideoPlane1('assets/videos/art.MP4');
+    const videoSet = await makeVideoPlane1('assets/videos/Pincehely.MP4');
     const anchor = mindarThree.addAnchor(3);
     anchor.group.add(videoSet.plane);
     anchor.onTargetFound = () => {
